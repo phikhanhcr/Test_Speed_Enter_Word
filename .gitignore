@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+
+# test file
+test.html
+test.css
+test1.html
+test2.html

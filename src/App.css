@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+.app {
+  width: 800px;
+  height: 100%;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app .Main {
+  background-color: #ddd;
+  height: 600px;
+  width: 90%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app .Login-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 15px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper-login img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.wrapper-login {
+  display: flex;
+  align-items: center;
+}
+
+.app .History {
+  margin: 15px 0;
+  width: 90%;
+}
+.app .History .wrapper-history .each-user {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+.Main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.Main .wrapper-wpm {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.Main .wrapper-wpm .wpm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Main .wrapper-wpm .wpm .speed {
+  font-size: 60px;
+  color: rgb(59, 175, 230);
+}
+.Main .count-down {
+  font-size: 40px;
+  color: rgb(84, 163, 199);
+}
+.Main .random-text {
+  width: 90%;
 }
 
-.App-link {
-  color: #61dafb;
+.Main .Typing {
+  width: 90%;
+}
+.Main .Typing textarea {
+  width: 100%;
+  height: 100px;
+  border: none;
+  padding-left: 15px;
+}
+.Main .button {
+  display: flex;
+  width: 90%;
+  margin-top: 15px;
+  justify-content: flex-end;
+}
+.Main .button img {
+  margin-left: 15px;
+  width: 50px;
+  height: 50px;
+}
+.Main .button .reset-button {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.History .wrapper-history .each-user .timer {
+  opacity: 70%;
 }
