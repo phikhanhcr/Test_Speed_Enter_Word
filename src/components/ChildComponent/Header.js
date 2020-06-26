@@ -20,8 +20,13 @@ function Header() {
   return (
     <div className="Login-header">
       <div className="wrapper-login">
-        <img src={user.avatar} />
-        <h4>{user.username}</h4>
+        {
+          user && <img src={user.avatar} /> 
+        }
+        {
+          user && <h4>{user.username}</h4>
+        }
+        
       </div>
       {
         user ? <a
