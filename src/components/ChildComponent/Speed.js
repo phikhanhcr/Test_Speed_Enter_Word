@@ -4,10 +4,11 @@ import PropTypes from 'prop-types';
 
 function Speed(props) {
   const symbols = props.symbol;
+  const correctWord = props.correctWord;
   return (
     <div className="wrapper-wpm">
         <div className="wpm">
-          <p className="speed">0</p>
+          <p className="speed">{correctWord}</p>
           <p>Words Per Minute </p>
         </div>
         <div className="wpm">
